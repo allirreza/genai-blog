@@ -13,7 +13,8 @@ import { SITE } from "./src/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: SITE.website,
+  site: "https://allirreza.github.io",
+  base: "/genai-blog", 
   integrations: [
     sitemap({
       filter: page => SITE.showArchives || !page.endsWith("/archives"),
